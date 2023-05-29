@@ -43,6 +43,7 @@ body {
   margin: 0;
   background-color: #fff; }
 
+/*color variables*/
 :root {
   --aliceblue: #e7efff; }
 
@@ -53,23 +54,15 @@ body {
     max-width: 1110px; } }
 
 /* container resize /-end */
-/*** back to top ***/
-.back-to-top {
-  position: fixed;
-  display: none;
-  right: 30px;
-  bottom: 30px;
-  z-index: 99; }
-
 /* helper , base classes */
 /* text-color /-start */
-.text-clr-blue {
-  color: var(--blue); }
+.text-clr-aliceblue {
+  color: var(--aliceblue); }
 
 /* text-color /-end */
 /* bg-color /-start */
-.bg-clr-blue {
-  background-color: var(--blue); }
+.bg-clr-aliceblue {
+  background-color: var(--aliceblue); }
 
 /* bg-color /-end */
 /* font-size /-start */
