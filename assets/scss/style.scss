@@ -1,7 +1,7 @@
 /**
  * @Main scss for (Template/Project Name)
  * @project     - Project Name
- * @author      - 
+ * @author      - Ashiqur Rahman
  * @created_by  - Ashiqur Rahman
  * @created_at  - 
  * @modified_by -
@@ -18,144 +18,105 @@
   box-sizing: border-box;
 }
 
+ul {
+  margin: 0;
+  list-style: none;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+a,
+button,
+.btn,
+input,
+select,
+textarea,
+.form-control,
+.form-select {
+  &:focus {
+    box-shadow: none !important;
+    outline: none !important;
+  }
+}
+
 body {
   padding: 0;
   margin: 0;
   background-color: #fff;
 }
 
+/*color variables*/
 :root {
-  // start with A
   --aliceblue: #e7efff;
-  --aliceblue2: #e9f6ff;
-  // start with B
-  --blue: #2161e0;
-  // start with C
-  --columbiablue: #b0ddff;
-  // start with D
-  --dark: #101044;
-  // start with E
-  --eastbay: #54547a;
-  // start with F
-  --floralwhite: #fff7eb;
-  // start with G
-  --green: #17bd8d;
-  --greenlight: #e9fbf6;
-  // start with H
-  // start with I
-  // start with J
-  // start with K
-  // start with L
-  --lavender: #ffedf2;
-  --lavender2: #f2f2fb;
-  --lavender3: #f9f9fe;
-  --lavender4: #e1deff;
-  // start with M
-  --manatee: #8d8dae;
-  // start with N
-  // start with O
-  // start with P
-  --pink: #e93266;
-  // start with Q
-  // start with R
-  --rose: #ffedec;
-  --rose2: #ffe6e4;
-  // start with S
-  --stormgrey: #6f6f87;
-  --solitude: #e9e9f1;
-  --sunsetorange: #ff4e3e;
-  --skyblue: #219fff;
-  // start with T
-  // start with U
-  // start with V
-  // start with W
-  // start with X
-  // start with Y
-  --yellow: #ffa114;
-  // start with Z
 }
 
-/* reset, root - END */
+/* reset, root /-end */
 
-// container resize
+/* container resize /-start */
 .container {
   @media (min-width: 1440px) {
     max-width: 1110px;
   }
 }
-// container resize - end
-
-/*** back to top ***/
-.back-to-top {
-  position: fixed;
-  display: none;
-  right: 30px;
-  bottom: 30px;
-  z-index: 99;
-}
-
-/*** Spinner ***/
-#spinner {
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity .5s ease-out, visibility 0s linear .5s;
-  z-index: 99999;
-  .show{
-    transition: opacity .5s ease-out, visibility 0s linear 0s;
-      visibility: visible;
-      opacity: 1;
-  }
-}
-
-// #spinner.show {
-//   transition: opacity .5s ease-out, visibility 0s linear 0s;
-//   visibility: visible;
-//   opacity: 1;
-// }
+/* container resize /-end */
 
 /* helper , base classes */
 
-// text-color
-.text-clr-blue {
-  color: var(--blue);
+/* text-color /-start */
+.text-clr-aliceblue {
+  color: var(--aliceblue);
 }
+/* text-color /-end */
 
-
-// BG color
-.bg-clr-blue {
-  background-color: var(--blue);
+/* bg-color /-start */
+.bg-clr-aliceblue {
+  background-color: var(--aliceblue);
 }
+/* bg-color /-end */
 
-
-// FONT SIZE
-
+/* font-size /-start */
 .fs-14 {
   font-size: 14px;
   line-height: 22px;
 }
+/* font-size /-end */
 
-// FONT WEIGHT
+/* font-weight /-start */
 .fw-medium {
   font-weight: 500;
 }
+
 .fw-semi-bold {
   font-weight: 600;
 }
+/* font-weight /-end */
 
-// BOX SHAOW
+/* box-shadow /-start */
 .box-shadow {
   box-shadow: 0px 15px 40px rgba(22, 8, 49, 0.1);
 }
+
 .box-shadow2 {
   box-shadow: 0px 7px 40px rgba(0, 0, 0, 0.05);
 }
+/* box-shadow /-end */
 
-// BORDER RADIUS
+/* border-radius /-start */
 .radius-10 {
   border-radius: 10px;
 }
+
 .radius-16 {
   border-radius: 16px;
 }
+/* border-radius /-end */
 
 /* helper , base classes  - END*/
